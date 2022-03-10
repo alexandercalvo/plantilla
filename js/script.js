@@ -2,13 +2,12 @@ const d = document;
 let menu = d.querySelector(".nav__menu");
 let boton = d.querySelector(".hamburguer");
 let close = d.querySelector(".nav__close");
-
-close.addEventListener('click', ()=>{
-    menu.classList.remove("nav__menu--visible");
-});
+let menuOpen= false;
 boton.addEventListener('click', ()=>{
+        menu.classList.toggle("nav__menu--visible");
 
-    menu.classList.toggle("nav__menu--visible");
+   
 
-});
+})
+
 
